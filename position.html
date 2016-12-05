@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--四種定位方式-->
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            /*絕對定位幾乎是放子元素*/
+            position: absolute;
+            right: 30px;
+            top: 50px;
+        }
+        .banner{
+            width: 600px;
+            height: 300px;
+            background-color: darkgray;
+            /*相對定位都是放父元素*/
+            /*這樣才可以包住子元素的絕對定位*/
+            /*父元素可以往上延伸*/ 
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>static   靜態定位</li>
+        <li>relative 相對定位</li>
+        <li>absolute 絕對定位</li>
+        <li>fixed    固定定位</li>
+    </ul>
+    <div class="banner">
+    <div class="box1"></div>
+    </div>
+</body>
+</html>

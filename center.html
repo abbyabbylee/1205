@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--絕對置中-->
+    <style>
+        /*第一種方法直接設行內置中@方便設定@相容性高@但只能設一行*/
+        /*.box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            text-align:center;
+            line-height:300px;
+        }*/
+        /*第二種方法直接設行內置中@方便設定@但IE相容性低*/
+        /*.box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            justify-content: space-around;
+            align-items: flex-end;
+        }*/
+        /*第三種方法直接設絕對置中@方便設定@缺點就是絕對*/
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

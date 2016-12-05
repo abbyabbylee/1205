@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--flex是新式的排版@IE較不支援-->
+    <!--要看族群相容性再決定要不要用這新式排版-->
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*flex在父元素裏面設定*/
+        /*用在置中對齊很好用*/
+        .container{
+            width: 100%;
+            background-color: dimgrey;
+            /*先設定模式為FLEX*/
+            display: flex;
+            /*改變方向為row或其他視情況而定*/
+            /*flex-direction:row(行);這是預設值*/
+            flex-direction: row;
+            /*是以平均一組分散*/
+            /*justify-content水平對齊*/
+            /*justify-content;flex-start是預設值*/
+            justify-content: space-around;
+            /*align-items垂直對齊*/
+            /*stretch(延伸)是預設值@但要在無預設高度下*/
+            /*baseline(每個區域第一排文字底線對齊)*/
+            align-items: flex-end;
+        }
+        .box1{
+            width: 300px;
+            background-color: #ff06d9
+        }
+        .box2{
+            width: 300px;
+            background-color: #0610ff
+        }
+        .box3{
+            width: 300px;
+            background-color: #197c08
+        }
+        
+        
+    </style>
+</head>
+<body>
+<!--   -->
+   <div class="container">
+   
+        <div class="box1">
+        <h1>qwer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, aperiam soluta minima quo nulla numquam fuga iure quos dolorem magnam. Et totam ullam, repudiandae vitae sed deleniti dolores iure omnis.repudiandae vitae sed deleniti dolores iure omnis.repudiandae vitae sed deleniti dolores iure omnis.repudiandae vitae sed deleniti dolores iure omnis.</p>
+        </div>       
+        <div class="box2">
+        <h1>12345</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, aperiam soluta minima quo nulla numquam fuga iure quos dolorem magnam. Et totam ullam, repudiandae vitae sed deleniti dolores iure omnis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, aperiam soluta minima quo nulla numquam fuga iure quos dolorem magnam. Et totam ullam, repudiandae vitae sed deleniti dolores iure omnis.</p>
+       </div>
+       <div class="box3">
+        <h1>yuio</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, aperiam soluta minima quo nulla numquam fuga iure quos dolorem magnam. Et totam ullam, repudiandae vitae sed deleniti dolores iure omnis.</p>
+       </div>
+       
+   </div>
+    
+</body>
+</html>

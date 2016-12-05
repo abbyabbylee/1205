@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <!--table比較麻煩通常不太會用這方式設定-->
+    <style>
+        .box{
+            width: 600px;
+            height: 600px;
+            display: table;
+            background-color: darkgray
+        }
+        /*就是一個大table在包一個table的儲存格*/
+        .box .content {
+            /*適合複雜版型可能是有圖片加說明文*/
+            /*但要和其他的排版就會比較困難因為其他的display:block都是區塊設定*/
+            display: table-cell;
+            width: 300px;
+            /*垂直置中要選middle才是置中*/
+            vertical-align: middle;
+            background-color: darkorange
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <h1>qwerty</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae porro illo libero asperiores consequatur consequuntur, doloremque ex, impedit suscipit iusto placeat vitae fuga atque non nostrum ullam natus, dolorum, commodi.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

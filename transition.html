@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+            /*transition漸變效果*/
+            /*後面要設定想改變的@顏色@長@高@以及秒數*/
+            /*第一個時間是改變最後一個時間是底類多久做下一個動作*/
+            /*也可以這樣寫transition:all .6s;就是指前面都要改變*/
+            /*            */
+            transition:background-color .6S,width .6S 1.2S; 
+        }
+        /*:是虛擬類別*/
+        .box:hover{
+            background-color: #0027ff;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
